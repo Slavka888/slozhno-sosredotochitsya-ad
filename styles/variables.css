@@ -2,3 +2,12 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+:root {
+    --page-header-menu-hover-color: rgb(255 0 112 / 0.4);
+    --main-text-color: #f1b2ce;
+    --background-color: #000028;
+    --header-color: #ff0070;
+    --block-header-color: #000028;
+    --decorative-elements: #ff0070;
+    --block-color: #ff0070;
+}

@@ -5,12 +5,89 @@
 */
 
 :root.theme-light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+    /* сохраните этот селектор в приведённом виде.
+      Так стили написанные ниже будут иметь больший вес,
+      чем стили в медиазапросе предпочтений пользователя
+    */
+    --page-header-menu-hover-color: rgb(50 49 45 / 0.4);
+    --main-text-color: #353430;
+    --header-color: #353430;
+    --background-color: #fff1f7;
+    --block-header-color: #353430;
+    --decorative-elements: #353430;
+    --block-color: #ff8dcb;
 }
 
-.theme-light .page {
-  /* Вам также нужно будет написать ряд подобных селекторов */
+.theme-light .header__element {
+    display: none;
+}
+
+.theme-light .decorated-header {
+    color: #ffc2e6;
+}
+
+.header__theme-menu-button:hover{
+    outline: 1px solid var(--page-header-menu-hover-color);
+}
+.header__theme-menu-button:focus-visible {
+    border-block-end: 1px solid var(--decorative-elements);
+    outline: none;
+}
+
+.page {
+    background-color: var(--background-color);
+}
+
+.header__theme-menu {
+    color: var(--decorative-elements);
+}
+
+.header__theme-menu-button_active {
+    border: 1px solid var(--decorative-elements);
+}
+
+.decorated-zone::before {
+    border-inline-end: 1px solid var(--decorative-elements);
+    border-block-start: 1px solid var(--decorative-elements);
+}
+
+.decorated-zone::after {
+    border-inline-start: 1px solid var(--decorative-elements);
+    border-block-end: 1px solid var(--decorative-elements);
+}
+
+.header {
+    color: var(--header-color);
+}
+
+.block-header {
+    color: var(--block-header-color);
+    background-color: var(--block-color);
+}
+
+.card-link {
+    text-shadow: 2px 2px 0 var(--block-color);
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        .header__theme-menu-button:hover{
+            outline: 1px solid var(--page-header-menu-hover-color);
+        }
+        .header__theme-menu-button:focus-visible {
+            border-block-end: 1px solid var(--decorative-elements);
+            outline: none;
+        }
+        --page-header-menu-hover-color: rgb(50 49 45 / 0.4);
+        --main-text-color: #353430;
+        --header-color: #353430;
+        .page {
+            background-color: var(--background-color);
+        }
+        --block-header-color: #353430;
+        .header__theme-menu {
+            color: var(--decorative-elements);
+        }
+        --block-color: #ff8dcb;
+    }
 }
