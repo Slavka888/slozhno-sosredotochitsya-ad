@@ -31,6 +31,9 @@
     'paragraph paragraph';
     grid-template-rows: 1fr min-content 1fr;
     grid-template-columns: 1fr 1fr;
+    background-image: url("../images/cover-image-dark.png");
+    background-position: center;
+    background-size: cover;
 }
 
 .page-header .decorated-header {
@@ -222,6 +225,11 @@
 
 @media (width >=768px) {
 
+    .header__element {
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+
     .page {
         gap: 60px;
     }
@@ -293,6 +301,11 @@
 }
 
 @media (width >=1024px) {
+
+    .header__element {
+        margin-right: 10px;
+        margin-top: 10px;
+    }
 
     .header__theme-menu {
         align-self: start;

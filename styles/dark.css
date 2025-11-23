@@ -16,5 +16,11 @@
     --block-header-color: #000028;
     --decorative-elements: #ff0070;
     --block-color: #ff0070;
+    .page-header {
+        background-image: url("../images/cover-image-dark.png");
+        background-position: center;
+        background-size: cover;
+    }
 }
+
 
